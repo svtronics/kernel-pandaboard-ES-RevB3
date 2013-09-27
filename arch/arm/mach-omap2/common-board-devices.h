@@ -15,6 +15,9 @@ void omap_nand_flash_init(int opts, struct mtd_partition *parts, int n_parts);
 
 extern struct ddr_device_info lpddr2_elpida_2G_S4_x2_info;
 extern struct lpddr2_timings lpddr2_elpida_2G_S4_timings[2];
+/* Modification for ELPIDA LPDDR2-s4 8Gb memory device */
+extern struct ddr_device_info lpddr2_elpida_8G_S4_x2_info;
+extern struct lpddr2_timings lpddr2_elpida_8G_S4_timings[2];
 
 extern struct ddr_device_info lpddr2_elpida_4G_S4_x2_info;
 extern struct lpddr2_timings lpddr2_elpida_4G_S4_timings[2];

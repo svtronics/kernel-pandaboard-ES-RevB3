@@ -153,6 +153,19 @@ struct ddr_device_info lpddr2_elpida_2G_S4_x2_info __devinitdata = {
 };
 
 /*
+ * SDRAM memory data
+ * Modification for ELPIDA LPDDR2-s4 8Gb memory device
+ */ 
+struct ddr_device_info lpddr2_elpida_8G_S4_x2_info __devinitdata = {
+	.type		= DDR_TYPE_LPDDR2_S4,
+	.density	= DDR_DENSITY_8Gb,
+	.io_width	= DDR_IO_WIDTH_32,
+	.cs1_used	= false,
+	.cal_resistors_per_cs = false,
+	.manufacturer	= "Elpida"
+};
+
+/*
  * AC timings for Elpida LPDDR2-s4 2Gb memory device
  */
 struct lpddr2_timings lpddr2_elpida_2G_S4_timings[] __devinitdata = {
@@ -203,6 +216,57 @@ struct lpddr2_timings lpddr2_elpida_2G_S4_timings[] __devinitdata = {
 		.tDQSCK_max_derated = 6000,
 	}
 };
+
+/* 
+ * AC timings for Elpida LPDDR2-s4 8Gb memory device
+ * Modification for ELPIDA RAM 
+ */
+struct lpddr2_timings lpddr2_elpida_8G_S4_timings[] __devinitdata = {
+	[0] = {
+		.max_freq       = 533000000,
+		.min_freq       = 10000000,
+		.tRPab          = 21000,
+		.tRCD           = 18000,
+		.tWR            = 15000,
+		.tRAS_min       = 42000,
+		.tRRD           = 10000,
+		.tWTR           = 15000,
+		.tXP            = 7500,
+		.tRTP           = 7500,
+		.tCKESR         = 15000,
+		.tDQSCK_max     = 5500,
+		.tFAW           = 50000,
+		.tZQCS          = 90000,
+		.tZQCL          = 360000,
+		.tZQinit        = 1000000,
+		.tRAS_max_ns    = 70000,
+		.tRTW           = 7500,
+		.tAONPD         = 1000,
+		.tDQSCK_max_derated = 6000,
+	},
+	[1] = { 
+		.max_freq       = 400000000,
+		.min_freq       = 10000000,
+		.tRPab          = 21000,
+		.tRCD           = 18000,
+		.tWR            = 15000,
+		.tRAS_min       = 42000,
+		.tRRD           = 10000,
+		.tWTR           = 15000,
+		.tXP            = 7500,
+		.tRTP           = 7500,
+		.tCKESR         = 15000,
+		.tDQSCK_max     = 5500, 
+		.tFAW           = 50000,
+		.tZQCS          = 90000,
+		.tZQCL          = 360000,
+		.tZQinit        = 1000000,
+		.tRAS_max_ns    = 70000,
+		.tRTW           = 7500,
+		.tAONPD         = 1000,
+		.tDQSCK_max_derated = 6000,
+	} 
+}; 
 
 struct ddr_min_tck lpddr2_elpida_S4_min_tck __devinitdata = {
 	.tRPab		= 3,
