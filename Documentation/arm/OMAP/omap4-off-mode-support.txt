@@ -1,0 +1,26 @@
+# This is a temporary file to disable buggy drivers that
+# break OFF mode on OMAP4.
+# To use this file simply concatenate the contents of this file to
+# .config and rebuild.
+#
+# e.g.
+#
+# make omap4plus_defconfig ARCH=arm
+# cat Documentation/arm/OMAP/omap4-off-mode-support.txt >> .config
+# make ...
+#
+
+#DSS2 prevents OFF mode
+CONFIG_VIDEO_DEV=n
+CONFIG_VIDEO_V4L2_SUBDEV_API=n
+CONFIG_VIDEO_OMAP2_VOUT=n
+CONFIG_DRM=n
+CONFIG_OMAP2_DSS=n
+
+#USB EHCI breaks on repeated suspend/resume
+CONFIG_USB_EHCI_HCD=n
+
+#prevent Ducati/Tesla from running
+CONFIG_OMAP_REMOTEPROC_IPU=n
+CONFIG_OMAP_REMOTEPROC_DSP=n
+

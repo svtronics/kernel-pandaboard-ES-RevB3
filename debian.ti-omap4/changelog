@@ -1,0 +1,111 @@
+linux-ti-omap4 (3.4.0-1486.10) precise; urgency=low
+
+  [ Xavier Boudet ]
+
+  * UBUNTU: version 3.4.0-1486.10
+  * CMA allocation fix
+  * trimming patches
+  * flush_cache patch
+
+ -- Xavier Boudet <x-boudet@ti.com>  Wed, 05 September 2012 14:32:01 +0200
+
+linux-ti-omap4 (3.4.0-1486.9) precise; urgency=low
+
+  [ Xavier Boudet ]
+
+  * UBUNTU: version 3.4.0-1486.9
+  * clk fixes
+  * ABE init fix
+  * drm fixes
+
+ -- Xavier Boudet <x-boudet@ti.com>  Thu, 30 August 2012 09:03:01 +0200
+
+linux-ti-omap4 (3.4.0-1486.8) precise; urgency=low
+
+  [ Xavier Boudet ]
+
+  * UBUNTU: version 3.4.0-1486.8
+  * remoteproc: retry 4 sec only to load Tesla FW
+  * merge mm and SCSI patches from git://git.omapzoom.org/kernel/omap.git
+    - branch: p-androidomap-3.4
+    - commit: 33d7c3dfb5a299c7c081af6d15544d4747e153f3
+
+ -- Xavier Boudet <x-boudet@ti.com>  Fri, 24 August 2012 14:07:01 +0200
+
+linux-ti-omap4 (3.4.0-1486.7) precise; urgency=low
+
+  [ Xavier Boudet ]
+
+  * UBUNTU: version 3.4.0-1486.7
+  * Update CMA: alignment with new FW
+
+ -- Xavier Boudet <x-boudet@ti.com>  Tue, 21 August 2012 17:06:01 +0200
+
+linux-ti-omap4 (3.4.0-1486.6) precise; urgency=low
+
+  [ Xavier Boudet ]
+
+  * UBUNTU: version 3.4.0-1486.6
+  * Fix twd interrupt
+  * omapdce PM
+
+ -- Xavier Boudet <x-boudet@ti.com>  Tue, 21 August 2012 09:49:01 +0200
+
+linux-ti-omap4 (3.4.0-1486.5) precise; urgency=low
+
+  [ Xavier Boudet ]
+
+  * UBUNTU: version 3.4.0-1486.5
+  * ARM ERRATA fixes
+  * twl6040, hsmmc and Serial erratas
+  * Upstream rebase rpmsg/remoteproc
+  * Add OMAP RPC driver
+
+ -- Xavier Boudet <x-boudet@ti.com>  Thu, 16 August 2012 09:38:01 +0200
+
+linux-ti-omap4 (3.4.0-1486.4) precise; urgency=low
+
+  [ Xavier Boudet ]
+
+  * UBUNTU: version 3.4.0-1486.4
+  * ARM ERRATA Review
+  * Remoteproc/rpmsg patches
+
+ -- Xavier Boudet <x-boudet@ti.com>  Tue, 14 August 2012 14:41:01 +0200
+
+linux-ti-omap4 (3.4.0-1486.3) precise; urgency=low
+
+  [ Xavier Boudet ]
+
+  * UBUNTU: version 3.4.0-1486.3
+  * Remoteproc off mode support fixes
+  * WriteBack buffer hack
+  * Updated config
+
+ -- Xavier Boudet <x-boudet@ti.com>  Fri, 10 August 2012 09:54:01 +0200
+
+linux-ti-omap4 (3.4.0-1486.2) precise; urgency=low
+
+  [ Xavier Boudet ]
+
+  * UBUNTU: version 3.4.0-1486.2
+  * New Linaro kernel 3.4 reference: tilt-3.4 - commit c8eb683
+
+ -- Xavier Boudet <x-boudet@ti.com>  Wed, 08 August 2012 11:39:01 +0200
+
+linux-ti-omap4 (3.4.0-1486.1) precise; urgency=low
+
+  [ Xavier Boudet ]
+
+  * UBUNTU: version 3.4.0-1486.1
+  * New Linaro kernel 3.4 reference: tilt-3.4 - commit 237ab3b
+
+ -- Xavier Boudet <x-boudet@ti.com>  Tue, 31 July 2012 17:16:01 +0200
+
+linux-ti-omap4 (3.4.0-1486.0) precise; urgency=low
+
+  [ Xavier Boudet ]
+
+  * New ABI
+
+ -- Xavier Boudet <x-boudet@ti.com>  Mon, 02 July 2012 17:16:00 +0200

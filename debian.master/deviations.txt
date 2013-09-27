@@ -1,0 +1,13 @@
+HYPER-V DRIVERS
+F:	drivers/hid/hid-hyperv.c
+F:	drivers/hv/*
+F:	drivers/scsi/storvsc_drv.c
+F:	drivers/staging/hv/*
+
+	Updated version of the Hyper-V storage, network, and mouse drivers
+	from those planned for v3.4.  The drivers in v3.2 simply do not
+	work correctly dropping access to the drive after a few seconds
+	of sustained use.  Testing with the Azure folk showed that the
+	v3.4 drivers worked well in the v3.2 codebase.	Intial version
+	from linux-next pre-merge window, update from v3.4-stable once
+	it releases.
